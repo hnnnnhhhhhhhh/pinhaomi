@@ -1,0 +1,13 @@
+/* Custom rounded wordmark, derived from the supplied lettering references. */
+#cover-title{display:block;width:min(620px,74vw);aspect-ratio:2.6;height:auto;background:none;letter-spacing:0;font-size:0;margin:15px auto 0}
+#cover-title::before{content:'';position:absolute;inset:0;background:url('assets/pinhaomi-wordmark-v2.png') center/contain no-repeat;pointer-events:none}
+#cover-title>span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;transform:none}
+.cover-spark{color:#ff4dd5;font-size:48px;right:-30px;top:8px}
+.cover-english{font-family:'Arial Rounded MT Bold','Chalkboard SE','Helvetica Neue',sans-serif;font-size:clamp(22px,2.3vw,28px);letter-spacing:-.06em;margin:16px 0 8px;line-height:1.25}
+.brand{position:relative;min-width:128px;min-height:40px;color:transparent;background:url('assets/pinhaomi-wordmark-v2.png') 36px center/94px auto no-repeat;letter-spacing:0}
+.brand-en{color:var(--ink);margin-left:2px;font-family:'Arial Rounded MT Bold','Chalkboard SE',sans-serif;letter-spacing:-.04em}
+.cover-caption{letter-spacing:.08em;font-size:16px}
+@media(max-width:700px){#cover-title{width:76vw;margin-top:23px}.cover-spark{font-size:26px;right:0;top:-20px}.cover-english{font-size:22px;margin-top:21px}.brand{background-size:82px auto;min-width:120px}.cover-caption{font-size:14px}}
+.canvas-title{justify-content:flex-end}
+.cover-footer{border-top:0}
+#start{font-weight:700}

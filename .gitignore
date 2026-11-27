@@ -1,0 +1,5 @@
+dist/
+*.zip
+source-photos/
+.sites-runtime/
+.DS_Store

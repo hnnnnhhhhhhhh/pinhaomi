@@ -1,0 +1,13 @@
+/* Compact editor: actions in the header, a single scrolling tab row. */
+#editor{padding-top:30px;padding-bottom:28px}
+.topbar #headerActions{width:auto;gap:10px;flex-shrink:0}
+.topbar #headerActions .pill{font-weight:600}
+.collage-desk{align-items:start}
+.library{display:flex;flex-direction:column;align-self:start;overflow:hidden}
+.studio{align-self:start}
+.library-title h2{font-size:23px}
+.filters{flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;flex-shrink:0;gap:4px;white-space:nowrap;scrollbar-width:thin;scrollbar-color:#b5a595 transparent;padding-bottom:9px;margin-bottom:15px}
+.filters button{flex:0 0 auto}
+.inventory{flex:1;min-height:0;max-height:none;align-content:start}
+.library-bottom{flex-shrink:0}
+@media(max-width:700px){#editor{padding-top:20px}.library{height:auto!important}.inventory{flex:none;max-height:110px}.filters{margin-bottom:10px;padding-bottom:7px}.topbar #headerActions{gap:7px}.topbar #headerActions .pill{min-height:40px;padding:9px 15px;font-size:12px}}
