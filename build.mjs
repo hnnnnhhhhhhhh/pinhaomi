@@ -23,6 +23,7 @@ for(const name of ['catalog.js','personal-data.js'])vm.runInContext(files.get(na
 const assets=[...context.window.CAT_ASSETS,...context.window.PERSONAL_ASSETS];
 if(assets.length!==107||new Set(assets.map(a=>a.id)).size!==assets.length)throw Error('Asset catalog is inconsistent');
 for(const asset of assets)await collect(asset.url);
+files.set('.nojekyll',Buffer.alloc(0));
 // dist contains only reproducible build outputs, never source photographs or tooling.
 await fs.rm(destination,{recursive:true,force:true});await fs.mkdir(destination,{recursive:true});
 for(const [name,data] of files){const target=path.join(destination,name);await fs.mkdir(path.dirname(target),{recursive:true});await fs.writeFile(target,data)}
